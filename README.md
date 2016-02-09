@@ -1,2 +1,4 @@
 # Stuff
-Just Personal Stuff and Resources
+
+A collection of files and other resources that I use for personal safe
+keeping. 
