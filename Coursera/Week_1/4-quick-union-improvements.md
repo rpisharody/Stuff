@@ -37,7 +37,9 @@ Union takes constant time (if the roots are already known)
 Depth of any node x is at most lg N.
 
 Initialize      : N
+
 Union           : lg N
+
 Find            : lg N
 
 Two trees, when are connected, worst case is both trees are of same size, which means, for each union, the depth of the node interested doubles. But this doubling can happen only lg N times (for size N). Thus, at worst, finding a root takes lg N operation (if the node is at the very end of two identical tree merges)
@@ -59,7 +61,9 @@ private int root(i) {
     return i;
 ```
 0 1 2 3 4 5 6 7 8 9
+
 0 1 3 4 5 5 6 7 8 9
+
 When looking for root of 2, we notice that it is connected to root of 3
 Thus we know that whatever is the root of 3 is also the root of 2.
 So instead of going through 3 to get to root, set root of 2 as the root of 3
@@ -73,11 +77,13 @@ But in practice, the WQUFPC is the closes we have !!
 # Summary
 Weighted Quick Union (with path compression) makes it possible to solve problems in dynamic connectivity analysis that otherwise could not be addressed.
 
+```
 Algorithm       Worst-Case Time
 Quick-Find          M N
 Quick-Union         M N
 Weighted QU         N + M log N
 QU + Path Compress  N + M log N
 Weighted QU + PC    N + M lg* N
+```
 
 where lg* N is the iterative log function (number of times we must take logarithm of N to reach 1. In practice, this is usualy 5)
