@@ -7,3 +7,5 @@
 [TMUX - The Terminal Multiplexer](http://blog.hawkhost.com/2010/06/28/tmux-the-terminal-multiplexer/)
 
 [Practical Tmux](https://mutelight.org/practical-tmux)
+
+[vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
